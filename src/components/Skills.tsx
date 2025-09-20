@@ -2,10 +2,9 @@
 "use client";
 import { motion } from "framer-motion";
 import ScrollReveal from "./UI/ScrollReveal";
-import { useComponentStyles } from "../theme/components";
 
 export default function Skills() {
-  const styles = useComponentStyles();
+
 
   // Technical skills with backend skills added
   const technicalSkills = [
@@ -43,7 +42,7 @@ export default function Skills() {
 
   return (
     <ScrollReveal 
-    direction="left"
+    direction="down"
     showBackground={true}
     backgroundColor="from-slate-900 via-purple-900 to-slate-900"
   >

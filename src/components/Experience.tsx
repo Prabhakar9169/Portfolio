@@ -1,9 +1,8 @@
 // components/Experience.tsx
 import ScrollReveal from "./UI/ScrollReveal";
-import { useComponentStyles } from "../theme/components";
 
 export default function Experience() {
-  const styles = useComponentStyles();
+
 
   const experiences = [
     {
@@ -29,16 +28,10 @@ export default function Experience() {
     }
   ];
 
-  // Professional stats from About component
-  const stats = [
-    { label: "Projects Completed", value: "50+", icon: "🚀" },
-    { label: "Years Experience", value: "3+", icon: "⏰" },
-    { label: "Happy Clients", value: "25+", icon: "😊" }
-  ];
 
   return (
     <ScrollReveal 
-      direction="right"
+      direction="zoom"
       showBackground={true}
       backgroundColor="from-slate-900 via-purple-900 to-slate-900"
     >

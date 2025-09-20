@@ -1,9 +1,8 @@
 // components/Projects.tsx
 import ScrollReveal from "./UI/ScrollReveal";
-import { useComponentStyles } from "../theme/components";
 
 export default function Projects() {
-  const styles = useComponentStyles();
+
 
   const projects = [
     {

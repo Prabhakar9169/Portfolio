@@ -1,9 +1,8 @@
 // components/Contact.tsx
 import ScrollReveal from "./UI/ScrollReveal";
-import { useComponentStyles } from "../theme/components";
 
 export default function Contact() {
-  const styles = useComponentStyles();
+
 
   const contactMethods = [
     {
@@ -49,9 +48,9 @@ export default function Contact() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-emerald-400 to-green-400 mx-auto mb-8"></div>
             <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              I'm always excited to collaborate on innovative projects and bring creative ideas to life.
+              I&apos;m a dedicated developer always excited to collaborate on innovative projects and bring creative ideas to life.
               Whether you need a modern web application or want to discuss the latest in frontend development,
-              I'd love to connect!
+              I&apos;m a dedicated developer love to connect!
             </p>
           </div>
 
@@ -90,7 +89,7 @@ export default function Contact() {
           <div className="text-center">
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 max-w-xl mx-auto hover:bg-white/10 transition-all duration-300 hover:border-emerald-500/50 hover:scale-105">
               <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 mb-4">
-                Let's Build Something Amazing Together
+                Let&apos;s Build Something Amazing Together
               </h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

@@ -56,7 +56,7 @@ export default function About() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-teal-400 mx-auto mb-8 rounded-full"></div>
           <p className="text-white/70 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            I'm a dedicated <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 font-semibold">Full Stack Developer</span> with{" "}
+             I&apos;m a dedicatedm a dedicated <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 font-semibold">Full Stack Developer</span> with{" "}
             <span className="text-emerald-400 font-semibold">2+ years of professional experience</span> specializing in 
             React, TypeScript, and modern web technologies. I focus on building efficient, scalable applications 
             with clean code and optimal user experiences.
@@ -81,7 +81,7 @@ export default function About() {
               </p>
               <p className="text-white/80 leading-relaxed">
                 In 2023, I secured my first professional role where I applied React, TypeScript, 
-                and Node.js in real-world projects. I've worked extensively on form handling, 
+                and Node.js in real-world projects. I&apos;m a dedicatedve worked extensively on form handling, 
                 API integrations, and component architecture while maintaining clean, maintainable code.
               </p>
               <p className="text-white/80 leading-relaxed">
@@ -141,7 +141,7 @@ export default function About() {
             
             {/* Desktop Timeline - All cards in single line with more gap */}
             <div className="hidden md:grid grid-cols-4 gap-12 items-center relative">
-              {journey.map((item, index) => (
+              {journey.map((item) => (
                 <div key={item.year} className="relative group">
                   {/* Content Card */}
                   <div className="group-hover:scale-105 transition-transform duration-300">
@@ -166,7 +166,7 @@ export default function About() {
             
             {/* Mobile Timeline - Vertical layout with more gap */}
             <div className="md:hidden space-y-16">
-              {journey.map((item, index) => (
+              {journey.map((item) => (
                 <div key={item.year} className="flex justify-center">
                   <div className="w-full max-w-sm">
                     <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:border-emerald-500/50">

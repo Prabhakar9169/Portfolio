@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion , Variants} from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 interface Props {
@@ -16,7 +16,6 @@ export default function ScrollReveal({
   delay = 0, 
   direction = "up",
   showBackground = false,
-  backgroundColor = "from-slate-900 via-purple-900 to-slate-900"
 }: Props) {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -25,28 +24,29 @@ export default function ScrollReveal({
   });
 
   // Different animation directions
-  const variants: Record<string, any> = {
-    up: { 
-      hidden: { opacity: 0, y: 60 }, 
-      visible: { opacity: 1, y: 0 } 
-    },
-    down: { 
-      hidden: { opacity: 0, y: -60 }, 
-      visible: { opacity: 1, y: 0 } 
-    },
-    left: { 
-      hidden: { opacity: 0, x: -80 }, 
-      visible: { opacity: 1, x: 0 } 
-    },
-    right: { 
-      hidden: { opacity: 0, x: 80 }, 
-      visible: { opacity: 1, x: 0 } 
-    },
-    zoom: { 
-      hidden: { opacity: 0, scale: 0.8 }, 
-      visible: { opacity: 1, scale: 1 } 
-    },
-  };
+  const variants: Record<"up" | "down" | "left" | "right" | "zoom", Variants> = {
+  up: { 
+    hidden: { opacity: 0, y: 60 }, 
+    visible: { opacity: 1, y: 0 } 
+  },
+  down: { 
+    hidden: { opacity: 0, y: -60 }, 
+    visible: { opacity: 1, y: 0 } 
+  },
+  left: { 
+    hidden: { opacity: 0, x: -80 }, 
+    visible: { opacity: 1, x: 0 } 
+  },
+  right: { 
+    hidden: { opacity: 0, x: 80 }, 
+    visible: { opacity: 1, x: 0 } 
+  },
+  zoom: { 
+    hidden: { opacity: 0, scale: 0.8 }, 
+    visible: { opacity: 1, scale: 1 } 
+  },
+};
+
 
   // Background variants for smooth color transition - Updated to purple-pink theme
   const backgroundVariants = {
